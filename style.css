@@ -1,0 +1,246 @@
+body{
+    margin:0;
+    padding:0;
+    background-color:rgba(3, 27, 56, 0.929);
+}
+html{
+    scroll-behavior: smooth;
+}
+.header{
+    background-color:rgba(18, 70, 122, 0.651);
+    width:100%;
+    position:fixed;
+    top:0;
+    right:0;
+    left:0;
+    transition:0.2s all linear;
+    box-shadow:0 0 10px rgb(0,0,0,0.5)
+}
+.container{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-container h2 a{
+    text-decoration: none;
+    color:white;
+    font-family: cursive;
+    font-size:25px;
+    font-weight:600;
+    margin-left:20px;
+}
+.navbar{
+    padding:10px;
+}
+.navbar ul{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    gap:40px;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color:white;
+    font-size: 20px;
+    font-family: cursive;
+    margin-right:30px;
+    transition: 0.2s all linear;
+}
+.navbar ul li a:hover,a:active{
+    color:rgb(255, 89, 0);
+}
+.intro{
+    margin:1% 3%;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    gap:10px;
+    height:100vh;
+}
+
+.intro .image-intro img{
+    width:250px;
+    height:250px;
+    border-radius:50%;
+    border:5px solid black;
+    box-shadow:0 0 10px rgb(0,0,0,1);
+    
+
+}
+.intro .text-intro{
+    padding:10px 10px;
+    margin-right:20px;
+    width:60%;
+}
+.text-intro h1{
+    color:white;
+    font-size:25px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.text-intro h1 span{
+    color:rgb(226, 43, 73);
+    font-size:28px;
+}
+.text-intro h3{
+    color:white;
+    font-size:20px;
+}
+.text-intro span{
+    color:rgb(226,43,73);
+    font-size: 21px;
+    font-family: cursive;
+}
+.text-intro p{
+    color:white;
+    font-size:18px;
+    margin-bottom:30px;
+}
+.text-intro a{
+    text-decoration: none;
+    color:white;
+    padding:10px 20px;
+    text-align: center;
+    background-color: rgb(0, 123, 255);
+    border-radius:10px;
+    margin-top:30px;
+    font-size:18px;
+    transition: 0.2s all linear;
+}
+.text-intro a:hover{
+    border-radius:0;
+}
+@keyframes animate{
+    0%{
+        transform:translateY(0);
+    }
+    50%{
+        transform:translateY(30px);
+    }
+    100%{
+        transform:translateY(0);
+    }
+}
+.skills{
+    min-height: 100vh;
+    padding:3rem 6% 1rem;
+    overflow-x: hidden;
+}
+.skills h1{
+    color:white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-bottom:5rem;
+    font-size: 2.5rem;
+}
+.skills h1 span{
+    color:red;
+}
+.skills .skill-container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap:2rem;
+    flex-wrap: wrap;
+}
+.skill-box{
+    flex:1 1 20rem;
+    background-color:rgba(3, 27, 56, 0.929);;
+    padding:2rem 3rem 2rem;
+    border-radius:10px;
+    text-align: center;
+    transition: 0.2s ease;
+    color:white;
+}
+.skill-box:hover{
+    cursor:pointer;
+    transform: scale(1.02);
+    border:2px solid black;
+}
+.certifications{
+    min-height: 100vh;
+    padding:3rem 6% 1rem;
+    overflow-x: hidden;
+}
+.certifications h1{
+    color:white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-bottom:5rem;
+    font-size: 2.5rem;
+}
+.certifications h1 span{
+    color:red;
+}
+.certifications .certificate-container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap:2rem;
+    flex-wrap: wrap;
+}
+.certificate-box{
+    flex:1 1 20rem;
+    background-color:rgba(3, 27, 56, 0.929);;
+    padding:2rem 3rem 2rem;
+    border-radius:10px;
+    text-align: center;
+    transition: 0.2s ease;
+    color:white;
+}
+.certificate-box:hover{
+    cursor:pointer;
+    transform: scale(1.02);
+    border:2px solid black;
+}
+.certificate-box img{
+    height:300px;
+    width:100%;
+}
+.contact{
+    min-height: 100vh;
+    padding:5rem 6% 1rem;
+    overflow-x: hidden;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contact h1{
+    color:white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-bottom:5rem;
+    font-size: 2.5rem;
+}
+.contact h1 span{
+    color:red;
+    font-size:40px;
+}
+.contact .contact-container{
+    display:flex;
+    flex-direction: column;
+    padding:10px;
+    gap:20px;
+    background-color:rgba(3, 27, 56, 0.929);;
+    border-radius:10px;
+    padding:10px 20px;
+}
+.contact-container input{
+    width:400px;
+    height:40px;
+    padding:0 10px;
+    margin-top:20px;
+    cursor:pointer;
+}
+.contact-container textarea{
+    height:60px;
+    padding:5px 10px;
+    resize:none;
+}
+.contact-container input[type="submit"]{
+    align-items: center;
+    font-size:20px;
+    margin-left:10px;
+    background-color:rgb(33, 103, 194);
+    color:white;
+    border:none;
+    border-radius:5px;
+}
